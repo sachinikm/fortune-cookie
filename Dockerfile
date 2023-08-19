@@ -10,6 +10,9 @@ RUN apk add --no-cache tini
 # when we run a container, we want it to use Tini as the init process
 ENTRYPOINT ["/sbin/tini", "--"]
 
+# Install Fortune.(this pgm "fortune", will prints out messages in the style of a fortune cookie)
+RUN apk add --no-cache fortune
+
 # Create a working directory for our application.
 RUN mkdir -p /app
 WORKDIR /app
