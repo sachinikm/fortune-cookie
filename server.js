@@ -12,7 +12,7 @@ child_process.exec('fortune', (error, message) => {
 if(error === null) {
 //const response = `Current Date and Time: ${currentDate}\nFortune Message: ${message}`;
 //            res.send(response);
-const response = 'Current Date and Time: ' + currentDate +'<br>'+ 'Fortune Message: ' + message;
+const response = 'Current Date and Timeeee: ' + currentDate +'<br>'+ 'Fortune Message: ' + message;
             res.send(response);
 } else {
 res.send('Error: ' + error);
