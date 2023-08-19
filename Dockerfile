@@ -25,8 +25,8 @@ COPY . /app
 # Switch to a non-privileged user for running commands.
 RUN chown -R node:node /app /deps
 USER node
-# Expose container port 3000.
-EXPOSE 3000
+# Expose container port 80.
+EXPOSE 80
 # Set the default command to use for `docker run`.
 # `npm start` simply starts our server.
 CMD [ "npm", "start" ]
